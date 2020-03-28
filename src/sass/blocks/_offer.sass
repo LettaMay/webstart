@@ -3,7 +3,7 @@
     background-size: contain
     background-position: center right
     position: relative
-    &::before
+    &:before
         content: ''
         width: 50%
         height: 100%
@@ -27,9 +27,30 @@
         width: 240px
         &:first-child
             margin-right: 10px
+        &:focus
+            // убрать синюю (по умолчанию) обводку для хрома
+            outline: none
+            // добавить желтую обводку
+            border: 2px solid $main-color
     &__button
         width: 100%
         min-height: 70px
+    &-info
+        display: flex
+        line-height: 1.6
+        margin-top: 31px
+        &__you
+            max-width: 50%
+            margin: 0
+        &__we
+            margin-left: 36px   
+        &__text
+            margin: 0
+        &__phone
+            color: $text-color
+            text-decoration: none
+            margin: 0
+            +bold
 @media (max-width: 1200px)
     .offer
         background-size: cover

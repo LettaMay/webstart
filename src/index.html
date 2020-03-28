@@ -18,9 +18,9 @@
                 <div class="navbar__info">
                     <div class="navbar__contacts">
                         <span class="navbar__address">Калуга, Москва, МО</span>
-                        <a href="tel:+7 (495) 42-251-31 " class="navbar__phone">+7 (495) 42-251-31 </a>
+                        <a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31 </a>
                     </div>
-                    <button class="button navbar__button">Перезвоните мне</button>
+                    <button class="button navbar__button" id="button">Перезвоните мне</button>
                 </div>
             </div>
             <!-- /.navbar-block -->
@@ -83,6 +83,17 @@
                         </button>
                     </form>
                     <!-- /.form offer-form -->
+                    <div class="offer-info">
+                        <p class="offer-info__you">Наш менеджер перезвонит Вам в течение 60 секунд</p>
+                        <!-- /.offer-info__you -->
+                        <div class="offer-info__we">
+                            <p class="offer-info__text">или перезвоните нам сами</p>
+                            <!-- /.offer-info__text -->
+                            <a href="tel:+7 (495) 42-251-31" class="offer-info__phone">+7 (495) 42-251-31</a>
+                            <!-- /.offer-info__phone -->
+                        </div>
+                    </div>
+                    <!-- /.offer-info -->
                 </div> 
                 <!-- /.offer-block -->
             </div>
@@ -93,6 +104,16 @@
 
     </main>
 
+<div class="modal" id="modal">
+    <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">Всплывающее окно</h4>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.model -->
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
